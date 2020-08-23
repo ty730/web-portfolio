@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+  Name: Tyler Wong
+  Date: 05.17.2020
+  Section : CSE 154 AJ
+
+  This is the index.html page for my fourth creative project. It has the format
+  and content for the word guesser game. Including the word generating button
+  and the game view which is initially hidden. The game view includes a form to
+  submit letters to guess and information about the state of the game.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="guess.css">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <script src="guess.js"></script>
+    <title>CP4</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        Word Guesser
+      </h1>
+      <section id="game" class="hidden">
+        <h2></h2>
+        <article id="word-container">
+          <h3 id="word"></h3>
+        </article>
+        <form id="guess-form">
+          <label for="guess">Guess letter:</label>
+          <input id="guess" name="letter" type="text" pattern="[a-z]" required>
+          <button id="submit-btn">Submit Guess!</button>
+        </form>
+        <article>
+          <p>Guesses made: <span id="guess-count"></span></p>
+          <p>Letters guessed: <span id="letters-guessed"></span></p>
+        </article>
+        <p id="message"></p>
+      </section>
+      <section id="start">
+        <button id="new-word">Generate A Word!</button>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

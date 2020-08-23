@@ -1,0 +1,54 @@
+/*
+  Name: Tyler Wong
+  Date: 05.17.2020
+  Section : CSE 154 AJ
+
+  This is the styles.css page for my creative project 4. it creates the visual
+  styles for the word guesser game. It creates a nice game box to enclose the game.
+  Also, it creates consistent text styles, and appropriate text features and sizes.
+*/
+
+body {
+  background-color: rgb(158, 240, 255);
+  text-align: center;
+  font-family: 'Concert One', cursive;
+}
+
+main {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 10%;
+  border: 5px solid black;
+  border-radius: 30px;
+  background: rgb(255, 131, 255);
+}
+
+h1 {
+  font-size: 40pt;
+}
+
+h3 {
+  font-size: 30pt;
+  letter-spacing: 40pt;
+  margin-right: -40pt;
+}
+
+p, label {
+  font-size: 18pt;
+}
+
+.hidden {
+  display: none;
+}
+
+#word-container {
+  margin: 5%;
+}
+
+h3, #letters-guessed {
+  text-transform: uppercase;
+}
+
+#new-word {
+  margin: 10%;
+}

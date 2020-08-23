@@ -1,48 +1,105 @@
 <!DOCTYPE html>
 <!--
+  Directions:
+  - Try viewing the page before you make any changes
+  - Look for all the places it say *** TODO: _____ ***
+  - Remove the *** TODO: _____ *** and follow the instructions. i.e. if it says
+    *** TODO: Give the page a title *** do just that, write a title for the page in place of the
+    todo item. Your final submission should not include any TODO comments
+-->
+
+<!--
   Name: Tyler Wong
-  Date: 05.17.2020
+  Date: 04.06.2020
   Section : CSE 154 AJ
 
-  This is the index.html page for my fourth creative project. It has the format
-  and content for the word guesser game. Including the word generating button
-  and the game view which is initially hidden. The game view includes a form to
-  submit letters to guess and information about the state of the game.
+  This is the hobbies.html page for my creative project 1. It has content and
+  pictures of some of my hobbies, hiking and making scratch games. It has a link
+  to the About Me page for my creative project 1.
 -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
-    <title>CP4</title>
+    <link rel="stylesheet" href="hobbies-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <title>CP1</title>
   </head>
   <body>
-    <main>
-      <h1>
-        Word Guesser
-      </h1>
-      <section id="game" class="hidden">
-        <h2></h2>
-        <article id="word-container">
-          <h3 id="word"></h3>
-        </article>
-        <form id="guess-form">
-          <label for="guess">Guess letter:</label>
-          <input id="guess" name="letter" type="text" pattern="[a-z]" required>
-          <button id="submit-btn">Submit Guess!</button>
-        </form>
-        <article>
-          <p>Guesses made: <span id="guess-count"></span></p>
-          <p>Letters guessed: <span id="letters-guessed"></span></p>
-        </article>
-        <p id="message"></p>
-      </section>
-      <section id="start">
-        <button id="new-word">Generate A Word!</button>
-      </section>
-    </main>
-    <footer>
-    </footer>
+    <header class="parallax">
+      <nav>
+        <ul>
+          <li>
+            <a href="about.html">About Me</a>
+          </li>
+          <li>
+            <a href="hobbies.html">Hobbies</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Hiking</h1>
+      <p>Washington state has a ton of really cool hiking trails. I've always enjoyed
+        getting the chance to get outdoors and see the mountains, lakes and waterfalls.
+        Here are some photos of various hikes I went on.
+      </p>
+      <div class="container">
+        <div>
+          <figure>
+            <img src="img/mountain.jpg" alt="Mason Lake, WA">
+            <figcaption>Mason Lake, WA</figcaption>
+          </figure>
+          <!-- This is my own image -->
+        </div>
+        <div>
+          <figure>
+            <img src="img/serene.jpg" alt="Lake Serene, WA">
+            <figcaption>Lake Serene, WA</figcaption>
+          </figure>
+          <!-- This is my own image -->
+        </div>
+        <div>
+          <figure>
+            <img src="img/water.jpg" alt="Deception Pass State Park">
+            <figcaption>Deception Pass State Park</figcaption>
+          </figure>
+          <!-- This is my own image -->
+        </div>
+      </div>
+    </section>
+    <section class="parallax" id="scratch">
+    </section>
+    <section>
+      <h1>Scratch Games</h1>
+      <p>In my free time I enjoy making scratch games. I make simple but fun games that are
+        usually inspired by 80's retro games that I put my own personal twist on. My username
+        is trex730, and you can find all of my games at this
+        <a href="https://scratch.mit.edu/users/trex730/">link.</a>
+      </p>
+      <div class="container">
+        <div>
+          <figure>
+            <img src="img/bone.jpg" alt="Bone Breaker">
+            <figcaption>A combat game about fighting skeletons</figcaption>
+          </figure>
+          <!-- This is my own image -->
+        </div>
+        <div>
+          <figure>
+            <img src="img/snake.jpg" alt="Snake">
+            <figcaption>A remake of the classic game Snake</figcaption>
+          </figure>
+          <!-- This is my own image -->
+        </div>
+        <div>
+          <figure>
+            <img src="img/space.jpg" alt="Space Cow Chaos">
+            <figcaption>A spin on the retro game galaga</figcaption>
+          </figure>
+          <!-- This is my own image -->
+        </div>
+      </div>
+    </section>
   </body>
 </html>

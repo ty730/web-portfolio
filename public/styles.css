@@ -1,54 +1,101 @@
 /*
   Name: Tyler Wong
-  Date: 05.17.2020
+  Date: 04.06.2020
   Section : CSE 154 AJ
 
-  This is the styles.css page for my creative project 4. it creates the visual
-  styles for the word guesser game. It creates a nice game box to enclose the game.
-  Also, it creates consistent text styles, and appropriate text features and sizes.
+  This is the hobbies-styles.css page for my Hobbies webpage. It is used to
+  style the layout and content of the Hobbies page. It includes links to the
+  background images used on the Hobbies page.
+*/
+
+/*
+  Note: This body ruleset is to get you started
 */
 
 body {
-  background-color: rgb(158, 240, 255);
+  background-color: rgb(250, 220, 248);
+  font-family: 'Slabo 27px', serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
   text-align: center;
-  font-family: 'Concert One', cursive;
-}
-
-main {
-  margin-left: 15%;
-  margin-right: 15%;
-  padding-bottom: 10%;
-  border: 5px solid black;
-  border-radius: 30px;
-  background: rgb(255, 131, 255);
-}
-
-h1 {
-  font-size: 40pt;
-}
-
-h3 {
-  font-size: 30pt;
-  letter-spacing: 40pt;
-  margin-right: -40pt;
-}
-
-p, label {
   font-size: 18pt;
 }
 
-.hidden {
-  display: none;
+img {
+  max-width: 250px;
+  max-height: 250px;
 }
 
-#word-container {
-  margin: 5%;
+h1, h2, h3 {
+  font-weight: bold;
 }
 
-h3, #letters-guessed {
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h3 {
+  font-size: 16pt;
+}
+
+p {
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 150%;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+ol {
+  list-style: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
   text-transform: uppercase;
+  color: black;
 }
 
-#new-word {
-  margin: 10%;
+header, section {
+  margin-bottom: 4%;
+}
+
+img {
+  max-width: 400px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+}
+
+header.parallax {
+  background-image: url("img/glare.jpg"); /* This is my own image */
+}
+
+#scratch {
+  background-image: url("img/invaders.jpg");
+  /* This image was found
+  https://theconservativechampion.org/blog/5-best-companies-for-high-risk-auto-insurance/ */
+  height: 400px;
 }
