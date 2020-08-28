@@ -17,7 +17,7 @@ body {
 main {
   margin-left: 15%;
   margin-right: 15%;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
   border: 5px solid black;
   border-radius: 30px;
   background: rgb(255, 131, 255);
@@ -37,6 +37,17 @@ p, label {
   font-size: 18pt;
 }
 
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 18pt;
+}
+
 .hidden {
   display: none;
 }
@@ -51,4 +62,23 @@ h3, #letters-guessed {
 
 #new-word {
   margin: 10%;
+}
+
+#new-word {
+  padding:0.35em 1.2em;
+  border:0.15em solid black;
+  margin: 30px;
+  border-radius:0.12em;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color: black;
+  text-align:center;
+  transition: all 0.2s;
+  background-color: rgb(158, 240, 255);
+}
+
+#new-word:hover{
+  color: rgb(158, 240, 255);
+  background-color: black;
 }

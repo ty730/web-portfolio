@@ -18,6 +18,21 @@
     <title>Word Guesser</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Hobbies</a>
+          </li>
+          <li>
+            <a href="guess.html">Word Guesser</a>
+          </li>
+          <li>
+            <a href="photo.html">Photo Gallery</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <h1>
         Word Guesser
@@ -29,7 +44,7 @@
         </article>
         <form id="guess-form">
           <label for="guess">Guess letter:</label>
-          <input id="guess" name="letter" type="text" pattern="[a-z]" required>
+          <input id="guess" name="letter" type="text" pattern="[a-zA-Z]" required>
           <button id="submit-btn">Submit Guess!</button>
         </form>
         <article>

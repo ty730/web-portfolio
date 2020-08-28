@@ -1,0 +1,124 @@
+/*
+  Name: Tyler Wong
+  Date: 05.02.2020
+  Section : CSE 154 AJ
+
+  This is the styles.css page for my creative project 3. It styles the titles
+  and buttons for my photo gallery to make their appearance match their purpose.
+  It also makes the footer with citations always show at the bottom of the page.
+*/
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+main {
+  min-height: 100%;
+}
+
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 40pt;
+}
+
+h1 {
+  margin-bottom: 6%;
+  margin-top: 5%;
+}
+
+h2 {
+  flex-grow: 2;
+  margin-bottom: 3%;
+}
+
+footer {
+  background-color: rgb(100, 100, 255);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer, button {
+  padding: 20px;
+}
+
+p {
+  font-size: large;
+}
+
+img {
+  max-height: 200px;
+  max-width: auto;
+  margin: 4%;
+}
+
+button {
+  margin: 30px;
+  font-size: medium;
+  background: lightblue;
+}
+
+nav {
+  background-color: rgb(44, 44, 44);
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 16pt;
+}
+
+#btn-container button {
+  padding: 40px;
+  font-size: x-large;
+}
+
+#pictures, #images article {
+  display: flex;
+}
+
+#pictures {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+.hidden {
+  display: none;
+}
+
+p, #images article {
+  margin-top: 5%;
+}
+
+#images article {
+  justify-content: center;
+  align-content: space-between;
+}
+
+#go-color {
+  background: linear-gradient(rgb(248, 100, 100), rgb(100, 100, 255));
+}
+
+#go-gray {
+  background: linear-gradient(white, rgb(75, 75, 75));
+}

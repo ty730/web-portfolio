@@ -59,6 +59,7 @@
     let guess = id("guess").value;
     if (id("letters-guessed").textContent.includes(guess)) {
       id("message").textContent = "You already guessed " + guess.toUpperCase() + "!";
+      id("guess").value = "";
     } else {
       id("message").textContent = "";
       let params = new FormData(id("guess-form"));
@@ -103,6 +104,7 @@
     } else {
       id("letters-guessed").textContent += ", " + result.letter;
     }
+    id("guess").value = "";
     if (result.pattern === result.word) {
       wordHasBeenGuessed(result.word);
     }

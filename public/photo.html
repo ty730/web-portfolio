@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+  Name: Tyler Wong
+  Date: 05.02.2020
+  Section : CSE 154 AJ
+
+  This is the index.html page for my third creative project. It lays out the
+  menu and photo gallery of the page. Including buttons, titles, the picture
+  container, and a citation in the footer.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="photo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="photo.js"></script>
+    <title>CP3</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Hobbies</a>
+          </li>
+          <li>
+            <a href="guess.html">Word Guesser</a>
+          </li>
+          <li>
+            <a href="photo.html">Photo Gallery</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="menu">
+        <h1>
+          Photo Gallery
+        </h1>
+        <div id="btn-container">
+          <button id="go-color">Color</button>
+          <button id="go-gray">Grayscale</button>
+        </div>
+      </section>
+      <section id="images" class="hidden">
+        <article>
+          <button id="back">Back to menu</button>
+          <h2>Colored Images</h2>
+          <button id="new">New images</button>
+        </article>
+        <div id="pictures"></div>
+      </section>
+    </main>
+    <footer>
+      All images on this page brought to you by
+      <a href="https://picsum.photos/">Lorem Picsum API: https://picsum.photos/</a>.
+    </footer>
+  </body>
+</html>
