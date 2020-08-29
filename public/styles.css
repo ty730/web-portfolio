@@ -12,19 +12,30 @@
   Note: This body ruleset is to get you started
 */
 
+* {
+  margin: 0;
+}
+
 body {
-  background-color: rgb(250, 220, 248);
+  background-color: white;
   font-family: 'Slabo 27px', serif;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  width: 100%;
   text-align: center;
   font-size: 18pt;
+  color: black;
 }
 
 img {
-  max-width: 250px;
-  max-height: 250px;
+  width: 300px;
+  height: 280px;
+  border: 6px solid black;
+}
+
+img:hover {
+  width: 305px;
+  height: 285px;
 }
 
 h1, h2, h3 {
@@ -33,6 +44,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 30pt;
+  margin-bottom: 5px;
 }
 
 h2 {
@@ -46,6 +58,7 @@ h3 {
 p {
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 2%;
   line-height: 150%;
 }
 
@@ -64,22 +77,32 @@ nav ul {
 nav a {
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: white;
+}
+
+.title {
+  color: white;
+  font-size: 50pt;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header, section {
   margin-bottom: 4%;
 }
 
-img {
-  max-width: 400px;
-  height: auto;
-}
-
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 .parallax {
@@ -90,7 +113,7 @@ img {
 }
 
 header.parallax {
-  background-image: url("img/glare.jpg"); /* This is my own image */
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("img/glare.jpg"); /* This is my own image */
 }
 
 #scratch {
@@ -98,4 +121,9 @@ header.parallax {
   /* This image was found
   https://theconservativechampion.org/blog/5-best-companies-for-high-risk-auto-insurance/ */
   height: 400px;
+}
+
+figcaption {
+  font-size: 14pt;
+  width: 330px;
 }
