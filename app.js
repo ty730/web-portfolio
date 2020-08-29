@@ -13,8 +13,9 @@
 const express = require("express");
 const app = express();
 
-const sqlite3 = require("sqlite3");
-const sqlite = require("sqlite");
+//sqlite3 is not supported by heroku
+//const sqlite3 = require("sqlite3");
+//const sqlite = require("sqlite");
 
 const multer = require("multer");
 const PORT_NUM = 8000;
@@ -82,7 +83,7 @@ app.post("/guess", (req, res) => {
  * Any errors that occur during connection should be caught in the function
  * that calls this one.
  * @returns {Object} - The database object for the connection.
- */
+
 async function getDBConnection() {
   const db = await sqlite.open({
     filename: "hikes.db",
@@ -90,6 +91,7 @@ async function getDBConnection() {
   });
   return db;
 }
+*/
 
 app.use(express.static("public"));
 const PORT = process.env.PORT || PORT_NUM;
