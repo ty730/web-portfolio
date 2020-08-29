@@ -28,14 +28,14 @@ body {
 }
 
 img {
-  width: 300px;
-  height: 280px;
+  width: auto;
+  height: 275px;
   border: 6px solid black;
 }
 
 img:hover {
-  width: 305px;
-  height: 285px;
+  width: auto;
+  height: 282px;
 }
 
 h1, h2, h3 {
