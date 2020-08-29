@@ -13,6 +13,9 @@
 const express = require("express");
 const app = express();
 
+const sqlite3 = require("sqlite3");
+const sqlite = require("sqlite");
+
 const multer = require("multer");
 const PORT_NUM = 8000;
 const BAD_REQUEST = 400;
@@ -73,6 +76,20 @@ app.post("/guess", (req, res) => {
     res.type("json").send(result);
   }
 });
+
+/**
+ * Establishes a database connection to a database and returns the database object.
+ * Any errors that occur during connection should be caught in the function
+ * that calls this one.
+ * @returns {Object} - The database object for the connection.
+ */
+async function getDBConnection() {
+  const db = await sqlite.open({
+    filename: "hikes.db",
+    driver: sqlite3.Database
+  });
+  return db;
+}
 
 app.use(express.static("public"));
 const PORT = process.env.PORT || PORT_NUM;
