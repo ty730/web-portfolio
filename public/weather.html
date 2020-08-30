@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="weather.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="weather.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <h1>Weather App</h1>
+      <form id="search-form">
+        <input id="search" name="search" type="text" placeholder="Enter City or Zip"required>
+        <button id="submit-btn" form="search-form">Search</button>
+      </form>
+      <section id="info" class="hidden">
+        <div class="container">
+          <div>
+            <h2 id="location"></h2>
+            <h3 id="temp"> &#176F</h2>
+            <p id="wind">Wind: 7mph NE</p>
+            <p id="precip">Precipitation: 0%</p>
+          </div>
+          <div class="icon-container">
+            <img id="icon">
+            <h2 id="condition"></h2>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -51,7 +51,7 @@ app.get("/guess", function(req, res) {
  */
 app.post("/guess", (req, res) => {
   res.type("text");
-  let letter = req.body.letter;
+  let letter = req.body.letter.toLowerCase();
   let word = req.body.word;
   let pattern = req.body.pattern;
   if (!(letter && word && pattern)) {

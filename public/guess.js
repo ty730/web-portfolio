@@ -56,7 +56,7 @@
   function makeGuess(evnt) {
     evnt.preventDefault();
     let url = "/guess";
-    let guess = id("guess").value;
+    let guess = id("guess").value.toLowerCase();
     if (id("letters-guessed").textContent.includes(guess)) {
       id("message").textContent = "You already guessed " + guess.toUpperCase() + "!";
       id("guess").value = "";
