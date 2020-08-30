@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  Name: Tyler Wong
+  Date: 04.21.2020
+  Section : CSE 154 AJ
+
+  This is the index.html page for my second creative project. It has the
+  contents and layout of the whack a mole game, and buttons to control
+  and adjust the games settings.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="whack.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+    rel="stylesheet">
+    <script src="whack.js"></script>
+    <title>CP2</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Back to Portfolio</a>
+          </li>
+      </nav>
+    </header>
+    <main>
+      <h1>
+        Whack A Mole
+      </h1>
+      <h2>
+        Score: <span id="score">0</span>
+      </h2>
+      <section id="container">
+        <!-- All images used in this project were found at
+        https://www.spriters-resource.com/custom_edited/mariocustoms/sheet/106734/ -->
+        <div>
+          <img src="img/hole.png" alt="Mole Hole">
+        </div>
+        <div>
+          <img src="img/hole.png" alt="Mole Hole">
+        </div>
+        <div>
+          <img src="img/hole.png" alt="Mole Hole">
+        </div>
+        <div>
+          <img src="img/hole.png" alt="Mole Hole">
+        </div>
+        <div>
+          <img src="img/hole.png" alt="Mole Hole">
+        </div>
+        <div>
+          <img src="img/hole.png" alt="Mole Hole">
+        </div>
+        <div>
+          <img src="img/hole.png" alt="Mole Hole">
+        </div>
+        <div>
+          <img src="img/hole.png" alt="Mole Hole">
+        </div>
+      </section>
+      <article>
+        <p id="difficulty">
+          How many mole holes do you want?
+          <label><input type="radio" name="hole-count" value="8" checked> 8</label>
+          <label><input type="radio" name="hole-count" value="16"> 16</label>
+          <label><input type="radio" name="hole-count" value="24"> 24</label>
+        </p>
+        <button id="start">Press to start!</button>
+      </article>
+    </main>
+  </body>
+</html>

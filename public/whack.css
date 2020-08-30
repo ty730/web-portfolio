@@ -1,0 +1,95 @@
+/*
+  Name: Tyler Wong
+  Date: 04.021.2020
+  Section : CSE 154 AJ
+
+  This is the styles.css page for my creative project 2. It is used to make
+  the page have the feel of a video game. Also, it makes the layout of the
+  whack a mole game uniform and all the images the same height.
+*/
+
+body {
+  background-color: pink;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+  margin-top: 5%;
+}
+
+img {
+  max-height: 150px;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+p {
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 150%;
+}
+
+article {
+  margin: 5%;
+}
+
+button {
+  margin: 1%;
+}
+
+div {
+  padding: 20px;
+}
+
+li {
+  height: 28px;
+  width: 270px;
+  margin-right: auto;
+  background-color: rgb(49, 186, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+  border-radius: 6px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: left;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 16pt;
+}
+
+#container {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid black 5px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
