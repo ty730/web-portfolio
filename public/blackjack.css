@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/bckgrd.png");
+  background-size: cover;
+  font-family: 'Voltaire', sans-serif;
+}
+
+main {
+  background: rgb(89, 170, 89);
+  width: 750px;
+  height: auto;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  border-radius: 50px;
+  border: solid black;
+}
+
+h1 {
+  flex: 0.1;
+  padding: 10px;
+  font-family: 'Diplomata SC', cursive;
+  font-size: 28pt;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: rgb(173, 54, 54);
+  font-size: 20pt;
+  margin: 0;
+}
+
+p {
+  font-size: 18pt;
+}
+
+img {
+  max-height: 97px;
+}
+
+button {
+  width: 120px;
+  height: 35px;
+  color: white;
+  font-size: 14pt;
+  text-shadow: 1px 1px black;
+}
+
+form {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#game {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+}
+
+#bank {
+  justify-self: flex-end;
+}
+
+#bank {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
+#your {
+  min-width: 140px;
+}
+
+#amt {
+  min-width: 140px;
+}
+
+#message {
+  height: 300px;
+}
+
+#ten {
+  background: blue;
+}
+
+#ten:disabled {
+  background: gray;
+}
+
+#fifty {
+  background: red;
+}
+
+#fifty:disabled {
+  background: gray;
+}
+
+#hit {
+  background: orange;
+}
+
+#stand {
+  background: darkorchid;
+}
+
+#deal {
+  background: purple;
+}
+
+#submit-btn, #playagain {
+  color: black;
+  text-shadow: none;
+}

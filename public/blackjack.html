@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="blackjack.css" />
+    <script src="blackjack.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Voltaire&display=swap" rel="stylesheet">
+    <title>Black Jack</title>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <h1>Black Jack</h1>
+      <section id="login">
+        <form id="login-form">
+          <div class="input">
+            <label for="login">Name:</label>
+            <input id="user-login" name="username" type="text" pattern="[a-zA-Z0-9]+" required>
+          </div>
+          <button id="submit-btn" form="login-form">Play</button>
+        </form>
+      </section>
+      <section id="game" class="hidden">
+        <h3 id="result"></h3>
+        <p id="message">Place Your Bets</p>
+        <div id="dealer">
+          <h2 id="dname" class="hidden">Dealer: </h2>
+          <div id="dealer-cards"></div>
+        </div>
+        <div id="player">
+          <h2 id="pname" class="hidden">Player: </h2>
+          <div id="player-cards"></div>
+        </div>
+        <div id="bottom">
+          <div id="right">
+            <button id="deal">Deal</button>
+            <button id="hit" class="hidden">Hit</button>
+            <button id="stand" class="hidden">Stand</button>
+          </div>
+          <div id="bank">
+            <p id="your">Bank: $<span id="money">500</span></p>
+            <div id="bets">
+              <button id="ten" value="10">$10</button>
+              <button id="fifty" value="50">$50</button>
+            </div>
+            <p id="amt">Bet amount: $<span id="bet-amount">0</span></p>
+          </div>
+        </div>
+        <button id="playagain" class="hidden">Play Again</button>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
