@@ -11,7 +11,7 @@
  */
 (function() {
 
-  const BASE_URL = "http://api.weatherapi.com/v1"; // you may have more than one
+  const BASE_URL = "https://api.weatherapi.com/v1"; // you may have more than one
 
   window.addEventListener("load", init);
 
@@ -46,6 +46,7 @@
    * @param {JSON} response - the response of the API in JSON form
    */
   function processData(response) {
+    console.log(response);
     id("info").classList.remove("hidden");
     let location = response.location.name + ", " + response.location.region;
     id("location").textContent = location;
