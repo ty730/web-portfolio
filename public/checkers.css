@@ -29,6 +29,11 @@ h1 {
   font-size: 30pt;
 }
 
+p {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
 #board {
   border: 2px solid black;
   width: 480px;
@@ -106,4 +111,8 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+.textred {
+  color: red;
 }

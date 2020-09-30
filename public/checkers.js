@@ -57,13 +57,18 @@
   function two() {
     id("login").classList.add("hidden");
     id("board").classList.remove("hidden");
+    id("message").classList.remove("hidden");
+    id("message").classList.add("textred");
+    id("message").textContent = "Reds turn";
   }
 
   function algorithm() {
-    if (false) {
-      console.log("game over");
+    let acts = actions(board, player);
+    if (acts.length == 0) {
+      player = false;
+      id("message").classList.remove("hidden");
+      id("message").textContent = "GAME OVER, YOU WIN!";
     } else {
-      let acts = actions(board, player);
       for (let k = 0; k < acts.length; k++) {
         if (acts.length > 2 && board[acts[k][2] + 1] && board[acts[k][2] + 1][acts[k][3] + 1] == "r" &&
             acts[k][3] - 1 == acts[k][1]) { //right
@@ -344,7 +349,23 @@
     checkDoubleJump(evnt.target, jump, doubleRed);
     checkKing(evnt.target);
     if (player !== "double" && ai) {
-      algorithm();
+      setTimeout(algorithm, 300);
+    } else {
+      let blackActs = actions(board, false);
+      let redActs = actions(board, true);
+      if (blackActs.length == 0) {
+        id("message").classList.remove("textred");
+        id("message").textContent = "GAME OVER, RED WINS!";
+      } else if (redActs.length == 0) {
+        id("message").classList.remove("textred");
+        id("message").textContent = "GAME OVER, BLACK WINS!";
+      } else if (player) {
+        id("message").classList.add("textred");
+        id("message").textContent = "Reds turn";
+      } else {
+        id("message").classList.remove("textred");
+        id("message").textContent = "Blacks turn";
+      }
     }
   }
 
