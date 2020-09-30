@@ -64,13 +64,30 @@
       console.log("game over");
     } else {
       let acts = actions(board, player);
-      if (acts[acts.length - 1][4] == "king" || acts[acts.length - 1][5] == "king") {
-        board = result(board, acts[acts.length -1], "bk");
+      for (let k = 0; k < acts.length; k++) {
+        if (acts.length > 2 && board[acts[k][2] + 1] && board[acts[k][2] + 1][acts[k][3] + 1] == "r" &&
+            acts[k][3] - 1 == acts[k][1]) { //right
+          acts.splice(k, 1);
+          k--;
+        }
+        else if (acts.length > 2 && board[acts[k][2] + 1] && board[acts[k][2] + 1][acts[k][3] - 1] == "r" &&
+            acts[k][3] + 1 == acts[k][1]) { //left
+          acts.splice(k, 1);
+          k--;
+        }
+      }
+      let move = acts.length - 1;
+      for (let i = 0; i < acts.length; i++) {
+        if (acts[i][4]) {
+          move = i;
+        }
+      }
+      if (acts[move][4] == "king" || acts[move][5] == "king") {
+        board = result(board, acts[move], "bk");
       } else {
-        board = result(board, acts[acts.length -1], "b");
+        board = result(board, acts[move], "b");
       }
       genGraphics(board);
-      console.log(board);
     }
     player = !player;
   }
