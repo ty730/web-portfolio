@@ -359,10 +359,10 @@
       } else if (redActs.length == 0) {
         id("message").classList.remove("textred");
         id("message").textContent = "GAME OVER, BLACK WINS!";
-      } else if (player) {
+      } else if (player && !ai) {
         id("message").classList.add("textred");
         id("message").textContent = "Reds turn";
-      } else {
+      } else if (!ai) {
         id("message").classList.remove("textred");
         id("message").textContent = "Blacks turn";
       }
