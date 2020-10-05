@@ -35,7 +35,8 @@ img {
 
 img:hover {
   width: auto;
-  height: 282px;
+  height: 276px;
+  box-shadow: 5px 10px 8px gray;
 }
 
 h1, h2, h3 {
