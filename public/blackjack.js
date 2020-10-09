@@ -87,6 +87,9 @@
     let cardPTwo = genCard();
     cardPTwo.classList.add("pcard");
     id("player-cards").appendChild(cardPTwo);
+    let allCards = qsa(".pcard");
+    let playerTotal = calculateHand(allCards);
+    id("pname").textContent = "Player: " + playerTotal;
   }
 
   /**
@@ -98,6 +101,7 @@
     id("player-cards").appendChild(newCard);
     let allCards = qsa(".pcard");
     let playerTotal = calculateHand(allCards);
+    id("pname").textContent = "Player: " + playerTotal;
     if (playerTotal > 21) {
       id("pname").textContent = "Player: " + playerTotal;
       id("result").textContent = "BUST!";
