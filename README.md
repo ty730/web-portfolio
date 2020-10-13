@@ -6,4 +6,4 @@ This is my web portfolio containing my web programming projects. It is also host
   * Requesting, fetching, and handling data from an external API (Weather App & Photo Gallery).
   * Storing user information on the webpage locally (Black Jack).
 
-
+![Web Portfolio](webportfolio.JPG)
